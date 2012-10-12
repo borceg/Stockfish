@@ -41,6 +41,8 @@
     
     <!--  The category where the application appears. Either core.games or core.media. -->
     <category>core.games</category>
+    <asset path="icon150.png">icon150.png</asset>
+    <asset path="icon86.png">icon86.png</asset>
     <configuration id="com.qnx.qcc.configuration.exe.debug.494492612" name="Device-Debug">
        <platformArchitecture>armle-v7</platformArchitecture>
        <asset path="Device-Debug/Stockfish" entry="true" type="Qnx/Elf">Stockfish</asset>
@@ -70,9 +72,14 @@
        <asset path="Simulator-Coverage/Stockfish" entry="true" type="Qnx/Elf">Stockfish</asset>
     </configuration>
     
-    <!--  The icon for the application, which should be 86x86. -->
+    <!--  The icon f                     
+or the application, which should be 86x86. -->
+                                    <image>icon150.png</image>
+                                    <image>icon86.png</image>
     <icon>
        <image></image>
+       <image>icon86.png</image>
+       <image>icon150.png</image>
     </icon>
     
     <!--  The splash screen that will appear when your application is launching. Should be 1024x600. -->
@@ -80,6 +87,8 @@
 
     <!-- Request permission to execute native code.  Required for native applications. -->
     <permission system="true">run_native</permission>
+    <permission>run_when_backgrounded</permission>
+    <permission>access_shared</permission>
     
     <!--  The permissions requested by your application. -->
     <!--  <permission>access_shared</permission> -->
